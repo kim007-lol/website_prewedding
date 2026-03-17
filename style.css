@@ -1,0 +1,552 @@
+:root {
+  --red: #e6d5d5d3;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0, 0, 0);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/prewedding.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur();
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--red);
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--red);
+  color: rgb(255, 243, 243);
+}
+
+.mynavbar {
+  background-color: rgba(192, 192, 192, 0.473) !important;
+  backdrop-filter: blur(2px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/floral.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.home h2 {
+  color: rgb(114, 115, 116);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.home p {
+  font-size: 1.3rem;
+  color: #626161;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.5rem;
+  color: rgb(114, 115, 116);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: red;
+}
+
+.info {
+  background-image: url(img/floraldark.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+}
+
+.info h2 {
+  color: var(--red);
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgb(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.story h2 {
+  color: rgb(114, 115, 116);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.story {
+  background-image: url(img/floral2.jpg);
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.story span {
+  text-transform: uppercase;
+  color: #626161;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.story p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 140px;
+  height: 140px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 3px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 65px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 66px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -12px;
+  right: auto;
+}
+
+.gallery h2 {
+  color: rgb(184, 144, 138);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+  /* margin-top: 5px; */
+  margin-bottom: 25px;
+}
+
+.gallery {
+  background-image: url(img/floral3.jpg);
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.gallery span {
+  text-transform: uppercase;
+  color: #626161;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  display: block;
+}
+
+.gallery p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.rsvp h2 {
+  color: rgb(127, 149, 149);
+  font-family: "Sacramento";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.rsvp {
+  background-image: url(img/hand.jpg);
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.rsvp form label {
+  color: rgb(0, 0, 0);
+}
+
+.rsvp button {
+  background-color: #a59d9d;
+  color: rgb(255, 236, 236);
+  border: 1px solid var(--red);
+}
+
+.rsvp button:hover {
+  background-color: rgb(107, 104, 104);
+  color: var(--red);
+  border: 1px solid white;
+}
+
+.gift h2 {
+  color: rgb(180, 94, 94);
+  font-family: "Sacramento";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.gift {
+  /* background-image: url(img/gift.jpg); */
+  background-color: white;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+.gift span {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  display: block;
+}
+.gift p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #a59d9d;
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* media query */
+/* extra */
+
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+  .home .heart {
+    display: none;
+  }
+  .timeline::before {
+    left: 60px;
+  }
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+  .timeline li .timeline-panel {
+    width: calc(100% - 200px);
+    float: right;
+  }
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .timeline li .timeline-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+  .timeline li .timeline-image {
+    width: 100px;
+    height: 100px;
+  }
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+  .timeline li .timeline-panel::before {
+    top: 40px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 41px;
+  }
+}
